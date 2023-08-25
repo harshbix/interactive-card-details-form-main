@@ -1,9 +1,9 @@
 const view = () => {
     return ( 
 
-        <>
-            <h1>Hello World</h1>
-        </>
+        <div className="box">
+            <h1>Hello Mom!</h1>
+        </div>
      );
 }
  

@@ -9,7 +9,7 @@ const CreditCardForm = () => {
             <div className="card-body">
               <form action="#" className="credit-card-form">
                 <div className="mb-3">
-                  <label htmlFor="cardHolderName" className="form-label">Cardholder Name</label>
+                  <label htmlFor="cardHolderName" className="form-label">CARDHOLDER NAME</label>
                   <input
                     type="text"
                     id="cardHolderName"
@@ -20,7 +20,7 @@ const CreditCardForm = () => {
                   />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="cardNumber" className="form-label">Card Number</label>
+                  <label htmlFor="cardNumber" className="form-label">CARD NUMBER</label>
                   <input
                     type="text"
                     id="cardNumber"
@@ -32,7 +32,7 @@ const CreditCardForm = () => {
                   />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="expDate" className="form-label">Exp. Date</label>
+                  <label htmlFor="expDate" className="form-label">Exp. Date (MM / YY)</label>
                   <div className="d-flex">
                     <input
                       type="text"
@@ -63,7 +63,7 @@ const CreditCardForm = () => {
                     />
                   </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary w-100">Submit</button>
               </form>
             </div>
           </div>

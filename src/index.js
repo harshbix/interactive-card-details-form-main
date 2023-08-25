@@ -8,10 +8,10 @@ import './index.css'
 function Main() {
   return (
     <div className='row'>
-      <div className='col-3'>
+      <div className='col-md-3'>
         <View />
       </div>
-      <div className='col-9'>
+      <div className='col-md-9'>
         <Other />
       </div>
     </div>

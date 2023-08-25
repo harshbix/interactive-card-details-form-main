@@ -18,9 +18,9 @@ const other = () => {
       </div>
       <div className="inline">
         <label htmlFor="date">Exp. Date (MM / YY)</label>
-        <input type="date" />
-        <input type="date" />
-        <input type="number" />
+        <input type="date" placeholder="MM" />
+        <input type="date" placeholder="YY"/>
+        <input type="number" placeholder="e.g 123"/>
       </div>
     </form>
     </div>

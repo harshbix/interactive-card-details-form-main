@@ -1,8 +1,8 @@
-@import url('https://fonts.google.com/specimen/Space+Grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 body {
     margin: 0;
     overflow: hidden;
-    font-family: 'Space Grotesk', 'serif';
+    font-family: 'Space Grotesk', 'sans-serif';
   }
   
   .box {
@@ -10,13 +10,18 @@ body {
     background-position: center center;
     height: 100vh;
   }
+  label
+  {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  input, input:focus
+  {
+   border: 0;
+   outline: 0 !important;
+  }
   
-  /* .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  } */
   .card-front , .card-back
   {
     height: 200px;
@@ -28,6 +33,17 @@ body {
   .card-front
   {
     transform: translate(50%, 25%);
+  }
+  .dark
+  {
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+  }
+  .dark:hover
+  {
+    background-color: hsl(279, 70%, 8%);
+    color: rgb(159, 159, 159);
+
   }
   .attribution {
     font-size: 15px;

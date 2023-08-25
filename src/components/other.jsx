@@ -59,7 +59,7 @@ const CreditCardForm = () => {
             />
           </div>
         </div>
-        <button type='submit' className='btn btn-primary w-100'>Submit</button>
+        <button type='submit' className='btn w-100 dark'>Comfirm</button>
       </form>
     </div>
   );

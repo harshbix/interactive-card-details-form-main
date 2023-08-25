@@ -1,6 +1,18 @@
-*
-{
+* {
   overflow: hidden;
 }
-.attribution { font-size: 15px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.box {
+  background-image: url("./images/bg-main-desktop.png");
+}
+.image {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

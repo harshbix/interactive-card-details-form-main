@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import View from './components/view';
 import Other from './components/other';
+import './index.css'
 
-function App() {
+function Main() {
   return (
     <div className='row'>
       <div className='col-3'>
@@ -17,4 +18,4 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));

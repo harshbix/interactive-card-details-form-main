@@ -1,6 +1,10 @@
-h1{
-    color: red;
-}
 
 .attribution { font-size: 15px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+.box
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,18 +1,40 @@
-* {
-  overflow: hidden;
-}
-.attribution {
-  font-size: 15px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-.box {
-  background-image: url("./images/bg-main-desktop.png");
-}
-.image {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
+@import url('https://fonts.google.com/specimen/Space+Grotesk');
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Space Grotesk', 'serif';
+  }
+  
+  .box {
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  
+  /* .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  } */
+  .card-front , .card-back
+  {
+    height: 200px;
+  }
+  .card-back
+  {
+    transform: translate(75%, 50%);
+  }
+  .card-front
+  {
+    transform: translate(50%, 25%);
+  }
+  .attribution {
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  

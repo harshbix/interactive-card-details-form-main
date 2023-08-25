@@ -1,17 +1,14 @@
-const view = () => {
+import React from 'react';
+
+const View = () => {
   return (
-    <div className="box">
+    <div className="box" style={{ backgroundImage: `url("/images/bg-main-desktop.png")` }}>
       <div className="image">
-        <div className="card-front">
-          <h1>
-            hey Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ut
-            eum sit delectus facere cum repudiandae iure? Iure dicta tenetur,
-            odio fugit nisi vel ab voluptas animi quaerat! Saepe, ratione.
-          </h1>
-        </div>
+        <img src="/images/bg-card-front.png" alt="Card Front" className='card-front'/>
+        <img src="/images/bg-card-back.png" alt="Card Front" className='card-back'/>
       </div>
     </div>
   );
 };
 
-export default view;
+export default View;

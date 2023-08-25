@@ -1,30 +1,76 @@
-const other = () => {
+import React from 'react';
+
+const CreditCardForm = () => {
   return (
     <div className="box">
-    <form action="#" className="form">
-      <div className="details">
-        <label htmlFor="cardHolderName">Cardholder Name</label>
-        <input
-          type="text"
-          placeholder="e.g Jane Appleseed"
-          name="cardHolderName"
-        />
-        <label htmlFor="cardNumber">Card Number</label>
-        <input
-          type="number"
-          placeholder="e.g Jane Appleseed"
-          name="cardNumber"
-        />
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <div className="card mt-5">
+            <div className="card-body">
+              <form action="#" className="credit-card-form">
+                <div className="mb-3">
+                  <label htmlFor="cardHolderName" className="form-label">Cardholder Name</label>
+                  <input
+                    type="text"
+                    id="cardHolderName"
+                    name="cardHolderName"
+                    className="form-control"
+                    placeholder="e.g Jane Appleseed"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="cardNumber" className="form-label">Card Number</label>
+                  <input
+                    type="text"
+                    id="cardNumber"
+                    name="cardNumber"
+                    className="form-control"
+                    placeholder="e.g 1234 5678 9012 3456"
+                    pattern="[0-9 ]{13,19}"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="expDate" className="form-label">Exp. Date</label>
+                  <div className="d-flex">
+                    <input
+                      type="text"
+                      id="expMonth"
+                      name="expMonth"
+                      className="form-control me-2"
+                      placeholder="MM"
+                      pattern="(0[1-9]|1[0-2])"
+                      required
+                    />
+                    <input
+                      type="text"
+                      id="expYear"
+                      name="expYear"
+                      className="form-control me-2"
+                      placeholder="YY"
+                      pattern="[0-9]{2}"
+                      required
+                    />
+                    <input
+                      type="text"
+                      id="cvv"
+                      name="cvv"
+                      className="form-control"
+                      placeholder="CVV"
+                      pattern="[0-9]{3}"
+                      required
+                    />
+                  </div>
+                </div>
+                <button type="submit" className="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="inline">
-        <label htmlFor="date">Exp. Date (MM / YY)</label>
-        <input type="date" placeholder="MM" />
-        <input type="date" placeholder="YY"/>
-        <input type="number" placeholder="e.g 123"/>
-      </div>
-    </form>
     </div>
   );
 };
 
-export default other;
+export default CreditCardForm;

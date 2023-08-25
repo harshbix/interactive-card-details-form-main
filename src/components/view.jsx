@@ -25,6 +25,7 @@ const View = () => {
           alt="Card Front"
           className="card-back"
         />
+        <div className="cvv">000</div>
       </div>
     </div>
   );

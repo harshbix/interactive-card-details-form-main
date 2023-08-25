@@ -24,6 +24,14 @@ body {
   .card-back
   {
     transform: translate(75%, 50%);
+    position: relative;
+  }
+  .cvv
+  {
+    position: fixed;
+    color: white;
+    top: 385px;
+    left: 560px;
   }
   .card-front
   {

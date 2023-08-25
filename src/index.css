@@ -15,16 +15,11 @@ body {
     font-size: 12px;
     letter-spacing: 1.5px;
   }
-
-  input, input:focus
-  {
-   border: 0;
-   outline: 0 !important;
-  }
   
   .card-front , .card-back
   {
     height: 200px;
+    position: relative;
   }
   .card-back
   {
@@ -33,6 +28,12 @@ body {
   .card-front
   {
     transform: translate(50%, 25%);
+  }
+  .circle
+  {
+    position: absolute;
+    left: 210px;
+    top: 70px;
   }
   .dark
   {

@@ -29,10 +29,23 @@ body {
   {
     transform: translate(50%, 25%);
   }
+  .details, circle
+  {
+    position: fixed;
+  }
+  .details
+  {
+    left: 205px;
+    top: 170px;
+    letter-spacing: .3px;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
   .circle
   {
     position: absolute;
-    left: 210px;
+    left: 205px;
     top: 70px;
   }
   .dark

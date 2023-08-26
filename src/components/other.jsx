@@ -2,7 +2,7 @@ import React from 'react';
 
 const CreditCardForm = () => {
   return (
-    <div className='container d-flex justify-content-center align-items-center' style={{ minHeight: '100vh' }}>
+    <div className='container d-flex justify-content-center align-items-center CreditCardForm' style={{ minHeight: '100vh' }}>
       <form className='card p-4 w-100 border-0'  style={{ maxWidth: '400px' }}>
         <div className='mb-3'>
           <label htmlFor='cardHolderName' className='form-label'>CARDHOLDER NAME</label>
@@ -59,7 +59,7 @@ const CreditCardForm = () => {
             />
           </div>
         </div>
-        <button type='submit' className='btn w-100 dark'>Comfirm</button>
+        <button type='submit' className='btn btn-lg w-100 dark'>Comfirm</button>
       </form>
     </div>
   );

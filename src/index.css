@@ -2,63 +2,20 @@
 
 body {
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: "Space Grotesk", sans-serif;
 }
 
 .box {
   background-size: cover;
-  background-position: center center;
-  height: 100vh;
+  height: 100%;
   background-image: url("../public/images/bg-main-desktop.png");
 }
 
 label {
   font-size: 12px;
   letter-spacing: 1.5px;
-}
-
-.card-front,
-.card-back {
-  height: 200px;
-  position: relative;
-}
-
-.card-back {
-  transform: translate(75%, 50%);
-  position: relative;
-}
-
-.cvv {
-  position: fixed;
-  color: white;
-  top: 385px;
-  left: 560px;
-}
-
-.card-front {
-  transform: translate(50%, 25%);
-}
-
-.details,
-.circle {
-  position: fixed;
-}
-
-.details {
-  left: 20px; /* Adjust as needed */
-  top: 150px; /* Adjust as needed */
-  text-align: center; /* Center the content */
-  letter-spacing: 0.3px;
-  font-size: 11px;
-  text-transform: uppercase;
-
-}
-
-.circle {
-  position: absolute;
-  left: 205px;
-  top: 70px;
 }
 
 .dark {
@@ -70,23 +27,6 @@ label {
   background-color: hsl(279, 70%, 8%);
   color: rgb(159, 159, 159);
 }
-/* Your existing CSS styles... */
-
-
-.nameAndDate {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.name {
-  font-size: 14px;
-}
-
-.expDate {
-  font-size: 14px;
-}
 
 .attribution {
   font-size: 15px;
@@ -97,11 +37,27 @@ label {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   body {
-    overflow: visible;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .CreditCardForm {
+    margin-top: -30%;
   }
   .box {
     background-image: url("../public/images/bg-main-mobile.png");
+    height: auto;
+    padding: 10%;
   }
+}
+
+/* front card styles */
+
+.card-container {
+  background-image: url("../public/images/bg-card-front.png");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

@@ -1,78 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
 body {
-    margin: 0;
-    overflow: hidden;
-    font-family: 'Space Grotesk', 'sans-serif';
+  margin: 0;
+  overflow: hidden;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.box {
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  background-image: url("../public/images/bg-main-desktop.png");
+}
+
+label {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.card-front,
+.card-back {
+  height: 200px;
+  position: relative;
+}
+
+.card-back {
+  transform: translate(75%, 50%);
+  position: relative;
+}
+
+.cvv {
+  position: fixed;
+  color: white;
+  top: 385px;
+  left: 560px;
+}
+
+.card-front {
+  transform: translate(50%, 25%);
+}
+
+.details,
+.circle {
+  position: fixed;
+}
+
+.details {
+  left: 20px; /* Adjust as needed */
+  top: 150px; /* Adjust as needed */
+  text-align: center; /* Center the content */
+  letter-spacing: 0.3px;
+  font-size: 11px;
+  text-transform: uppercase;
+
+}
+
+.circle {
+  position: absolute;
+  left: 205px;
+  top: 70px;
+}
+
+.dark {
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+}
+
+.dark:hover {
+  background-color: hsl(279, 70%, 8%);
+  color: rgb(159, 159, 159);
+}
+/* Your existing CSS styles... */
+
+
+.nameAndDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.name {
+  font-size: 14px;
+}
+
+.expDate {
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
   }
-  
   .box {
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
+    background-image: url("../public/images/bg-main-mobile.png");
   }
-  label
-  {
-    font-size: 12px;
-    letter-spacing: 1.5px;
-  }
-  
-  .card-front , .card-back
-  {
-    height: 200px;
-    position: relative;
-  }
-  .card-back
-  {
-    transform: translate(75%, 50%);
-    position: relative;
-  }
-  .cvv
-  {
-    position: fixed;
-    color: white;
-    top: 385px;
-    left: 560px;
-  }
-  .card-front
-  {
-    transform: translate(50%, 25%);
-  }
-  .details, circle
-  {
-    position: fixed;
-  }
-  .details
-  {
-    left: 205px;
-    top: 170px;
-    letter-spacing: .3px;
-    font-size: 11px;
-    text-transform: uppercase;
-  }
-
-  .circle
-  {
-    position: absolute;
-    left: 205px;
-    top: 70px;
-  }
-  .dark
-  {
-    background-color: hsl(278, 68%, 11%);
-    color: white;
-  }
-  .dark:hover
-  {
-    background-color: hsl(279, 70%, 8%);
-    color: rgb(159, 159, 159);
-
-  }
-  .attribution {
-    font-size: 15px;
-    text-align: center;
-  }
-  
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
-  
+}

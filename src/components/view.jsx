@@ -1,10 +1,12 @@
 import React from "react";
 import FrontCard from "./frontCard";
+import BackCard from "./backCard";
 
 const View = () => {
   return (
-    <div className="box">
+    <div className="box" >
         <FrontCard />
+        <BackCard />
     </div>
   );
 };

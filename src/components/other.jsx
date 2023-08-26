@@ -3,7 +3,7 @@ import React from 'react';
 const CreditCardForm = () => {
   return (
     <div className='container d-flex justify-content-center align-items-center CreditCardForm' style={{ minHeight: '100vh' }}>
-      <form className='card p-4 w-100 border-0'  style={{ maxWidth: '400px' }}>
+      <form className='card p-4 border-0'  style={{ maxWidth: '400px' }}>
         <div className='mb-3'>
           <label htmlFor='cardHolderName' className='form-label'>CARDHOLDER NAME</label>
           <input

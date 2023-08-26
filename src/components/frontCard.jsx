@@ -2,7 +2,7 @@ const frontCard = () => {
     return ( 
         <div className="card-container">
 
-            
+
         </div>
      );
 }

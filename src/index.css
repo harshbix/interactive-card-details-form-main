@@ -5,12 +5,14 @@ body {
   padding: 0;
   overflow: hidden;
   font-family: "Space Grotesk", sans-serif;
+  box-sizing: border-box;
 }
 
 .box {
   background-size: cover;
   height: 100%;
   background-image: url("../public/images/bg-main-desktop.png");
+  padding: 20px;
 }
 
 label {
@@ -42,14 +44,24 @@ label {
     margin: 0;
     overflow: hidden;
     padding: 0;
+    box-sizing: border-box;
   }
   .CreditCardForm {
     margin-top: -30%;
   }
   .box {
     background-image: url("../public/images/bg-main-mobile.png");
-    height: auto;
+    height: 300px;
     padding: 10%;
+  }
+  .card-container-back {
+    position: relative;
+    transform: translate(50px, -150px);
+  }
+  .card-container {
+    position: relative;
+    transform: translate(-10px, 150px);
+    z-index: 1;
   }
 }
 
@@ -57,7 +69,17 @@ label {
 
 .card-container {
   background-image: url("../public/images/bg-card-front.png");
-  height: 200px;
+  margin-right: -20px; /* Remove margin added by padding on small screens */
+  margin-left: -20px; /* Remove margin added by padding on small screens */
+}
+.card-container-back {
+  background-image: url('../public/images/bg-card-back.png');
+  margin-right: -20px; /* Remove margin added by padding on small screens */
+  margin-left: -20px; /* Remove margin added by padding on small screens */
+}
+.card-container-back,
+.card-container {
+  height: 180px;
   background-repeat: no-repeat;
   background-size: contain;
 }

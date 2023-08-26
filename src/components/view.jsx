@@ -4,7 +4,7 @@ import BackCard from "./backCard";
 
 const View = () => {
   return (
-    <div className="box" >
+    <div className="box w-100">
         <FrontCard />
         <BackCard />
     </div>

@@ -53,6 +53,7 @@ label {
     background-image: url("../public/images/bg-main-mobile.png");
     height: 300px;
     padding: 10%;
+    width: auto !important;
   }
   .card-container-back {
     position: relative;
@@ -69,13 +70,9 @@ label {
 
 .card-container {
   background-image: url("../public/images/bg-card-front.png");
-  margin-right: -20px; /* Remove margin added by padding on small screens */
-  margin-left: -20px; /* Remove margin added by padding on small screens */
 }
 .card-container-back {
   background-image: url('../public/images/bg-card-back.png');
-  margin-right: -20px; /* Remove margin added by padding on small screens */
-  margin-left: -20px; /* Remove margin added by padding on small screens */
 }
 .card-container-back,
 .card-container {

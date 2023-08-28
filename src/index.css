@@ -12,7 +12,8 @@ body {
   background-size: cover;
   height: 100%;
   background-image: url("../public/images/bg-main-desktop.png");
-  padding: 20px;
+  padding: 10%;
+  display: grid;
 }
 
 label {
@@ -47,21 +48,23 @@ label {
     box-sizing: border-box;
   }
   .CreditCardForm {
-    margin-top: -30%;
+    margin-top: 30%;
   }
   .box {
     background-image: url("../public/images/bg-main-mobile.png");
     height: 300px;
-    padding: 10%;
-    width: auto !important;
+    padding: 15%;
+    position: absolute;
   }
   .card-container-back {
     position: relative;
-    transform: translate(50px, -150px);
+    left: 40px;
+    top: -160px;
   }
   .card-container {
     position: relative;
-    transform: translate(-10px, 150px);
+    left: -30px;
+    top: 140px;
     z-index: 1;
   }
 }
@@ -72,7 +75,7 @@ label {
   background-image: url("../public/images/bg-card-front.png");
 }
 .card-container-back {
-  background-image: url('../public/images/bg-card-back.png');
+  background-image: url("../public/images/bg-card-back.png");
 }
 .card-container-back,
 .card-container {

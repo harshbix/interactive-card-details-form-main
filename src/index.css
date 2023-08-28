@@ -95,3 +95,18 @@ label {
   margin-top: 80px;
   margin-left: 255px;
 }
+h5  
+{
+  letter-spacing: 2px;
+  padding: 12px 0;
+}
+
+.card-logo .logo
+{
+  height: 35px;
+}
+
+.details
+{
+  margin-top: 35px;
+}

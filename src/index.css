@@ -36,6 +36,9 @@ label {
 .attribution {
   font-size: 15px;
   text-align: center;
+  position: fixed;
+  left: 53%;
+  bottom: 6%;
 }
 
 .attribution a {
